@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int a, b;
-    scanf("%d %d", &a, &b);
-    double c;
-    c = (double)a / (double)b;
-    printf("%.11lf", c);
+    char a[51];
+    scanf("%s", a);
+    printf("%s??!", a);
     
     return 0;
 }
