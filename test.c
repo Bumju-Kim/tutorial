@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    char a[51];
-    scanf("%s", a);
-    printf("%s??!", a);
-    
+    int a;
+    scanf("%d", &a);
+
+    printf("%d", a-543);
+
     return 0;
 }
