@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int num, a, b, max=-1000001, min=1000001, i;
-    scanf("%d", &num);
-    
-    for(i=0; i<num; i++){
-        scanf("%d", &a);
-        if(a > max)
-            max = a;
-        if(a < min)
-            min = a;
+    int a[9], max=-1, i, loc;
+
+    for(i=0; i<9; i++){
+        scanf("%d", &a[i]);
     }
-    printf("%d %d", min, max);
-    return 0;
+    for(i=0; i<9; i++){
+        if(a[i] > max){
+            max = a[i];
+            loc = i;
+        }
+    }
+    printf("%d\n%d", max, loc+1);
 }
